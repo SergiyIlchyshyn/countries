@@ -1,0 +1,51 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/* ================================ */
+:root {
+	--dark-mode-elements: hsl(209, 23%, 22%);
+	--dark-mode-bg: hsl(207, 26%, 17%);
+	--light-mode-elements: #fff;
+	--light-mode-bg: hsl(0, 0%, 98%);
+}
+
+.header {
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.header_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.switch_mode {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	cursor: pointer;
+	user-select: none;
+}
