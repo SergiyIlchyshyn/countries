@@ -123,6 +123,7 @@ button {
 	letter-spacing: 0.5px;
 }
 .drop {
+	display: none;
 	width: 100%;
 	padding: 10px 14px;
 	border-radius: 5px;
@@ -138,6 +139,7 @@ button {
 	padding: 30px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
 }
 .country {
 	width: 300px;
@@ -152,4 +154,18 @@ button {
 }
 .country-info {
 	padding: 20px 17px;
+}
+.country-info h5{
+	padding: 8px 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.country-info p {
+	letter-spacing: 1px;
+}
+.country-info p>strong {
+	font-weight: 600;
+}
+.showDropDown {
+	display: block;
 }
